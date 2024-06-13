@@ -12,7 +12,7 @@ When the program is launched, there is a menu prompt with options to either star
 
 ## Class Diagram
 
-![UML Class Diagram]([C:\Users\Omair\Desktop\New folder\Chess\1.png](https://github.com/Omair-Shafi/Chess/blob/main/1.png))
+![UML Class Diagram](https://github.com/Omair-Shafi/Chess/blob/main/1.png)
 
 Each class pertaining to a chess piece (**King**, **Queen**, **Rook**, **Knight**, **Bishop**, **Pawn**) inherits the **Piece** class containing isMoveValid(Move, Board*), getValue(), and getDirections(). The **Piece** class contains functions to either display available moves for a chosen piece or check if the moves entered by the user are legal. The history of moves played is handled by the **Game** class above and is achieved through keeping track of a stack of **Board** pointers. Each Board pointer has access to the members: board, numPieces, depth, and value. These members are accessed after every move to retrieve the current status of the board.
 
