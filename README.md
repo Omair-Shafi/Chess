@@ -24,3 +24,5 @@ During a game, statuses to update the board, undo a move, or make another move a
  ## Design Pattern
 
 For this project, we decided to go with the Observer Pattern, which sets up a notification system in which a subject class (listener) notifies other dependent classes (observers) upon a change of its state. By implementing the observer pattern, we were able to separate our game's model from the user interface for our game. In doing so, we abstracted the player from the game, allowing us to add new player types (as necessary) that will interact with the model solely through the observer pattern. This not only improved the extensibility of the program, but also circumvented the need to modify the game model for each new player type added, thus abiding by the open-closed principle. Specifically, we plan on introducing one (or more) computer player types (naïve, minimax), so the observer pattern will reduce the need for unnecessary code to implement the AI with the model.
+
+![Chess board](https://github.com/Omair-Shafi/Chess/blob/main/chess%20board.PNG)
